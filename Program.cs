@@ -51,7 +51,7 @@ namespace PRNG_PoC_Predictor
             bool found = false;
             int seed = 0;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < threadCount; i++)
             {
                 var thread = new Thread(() =>
                 {
